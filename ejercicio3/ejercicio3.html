@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Covertidor</title>
+    <script src="ejercicio3.js"></script>
+    <style>
+      #tabla{
+        width: 400px;
+        border: 1px blue;
+        padding: 25px;
+      }
+      td, th{
+        width: 80px;
+        height: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="text-align:center">
+    <h1>Convertir Fahrenheit a Celsius</h1>
+    <div id="tabla">
+      <table border="1">
+        <tr>
+          <th>Fahrenheit</th>
+          <td><input type="number" id="fahrenheit" style="text-align: center"></td>
+        </tr>
+        <tr>
+          <th>Celsius</th>
+          <td><div id = "celsius" onchange="convertir()"></div></td>
+        </tr>
+      </table>
+      <p><button onclick="convertir()">Calcular</button></p>
+    </div>
+  </body>
+</html>
