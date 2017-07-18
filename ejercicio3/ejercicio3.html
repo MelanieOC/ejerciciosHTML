@@ -5,9 +5,10 @@
     <title>Covertidor</title>
     <script src="ejercicio3.js"></script>
     <style>
-      #tabla{
+      .tabla{
         width: 400px;
-        border: 1px blue;
+        background-color: white;
+        border: 1px solid;
         padding: 25px;
       }
       td, th{
@@ -15,22 +16,40 @@
         height: 20px;
         text-align: center;
       }
+      h1{
+        color: #4435C9;
+      }
     </style>
   </head>
-  <body style="text-align:center">
-    <h1>Convertir Fahrenheit a Celsius</h1>
-    <div id="tabla">
-      <table border="1">
-        <tr>
-          <th>Fahrenheit</th>
-          <td><input type="number" id="fahrenheit" style="text-align: center"></td>
-        </tr>
-        <tr>
-          <th>Celsius</th>
-          <td><div id = "celsius" onchange="convertir()"></div></td>
-        </tr>
-      </table>
-      <p><button onclick="convertir()">Calcular</button></p>
-    </div>
+  <body style="background-color: #A2EFEA">
+    <center>
+      <h1>Convertir Fahrenheit a Celsius</h1>
+      <div class="tabla">
+        <table border="1">
+          <tr>
+            <th>Fahrenheit</th>
+            <td><input type="number" id="fahrenheit" style="text-align: center"onchange="convertirFaC()"></td>
+          </tr>
+          <tr>
+            <th>Celsius</th>
+            <td><div id="celsius"></div></td>
+          </tr>
+        </table>
+      </div>
+      <p> </p>
+      <h1>Convertir Celsius a Fahrenheit</h1>
+      <div class="tabla">
+        <table border="1">
+          <tr>
+            <th>Celsius</th>
+            <td><input type="number" id="celsius2" style="text-align: center"onchange="convertirCaF()"></td>
+          </tr>
+          <tr>
+            <th>Fahrenheit</th>
+            <td><div id="fahrenheit2"></div></td>
+          </tr>
+        </table>
+      </div>
+    </center>
   </body>
 </html>
